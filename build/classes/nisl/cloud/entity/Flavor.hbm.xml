@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package = "nisl.cloud.entity">
+	<class name = "Flavor" table = "FLAVOR">
+		<id name = "flavid" column = "flavid" type = "java.lang.Integer">
+			<generator class = "identity"></generator>
+		</id>
+		<property name = "name" column = "NAME" type = "java.lang.String"></property>
+		<property name = "memory" column = "MEMORY" type = "java.lang.Integer"></property>
+		<property name = "vcpus" column = "VCPUS" type = "java.lang.Integer"></property>
+		<property name = "disk" column = "DISK" type = "java.lang.Integer"></property>
+		
+	</class>
+</hibernate-mapping>

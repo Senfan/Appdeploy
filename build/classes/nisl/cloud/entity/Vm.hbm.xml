@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="nisl.cloud.entity.Vm" table="VM">
+		<id name="vmid" type="java.lang.Integer">
+			<column name="VMID" precision="22" scale="0" />
+			<generator class = "identity"></generator>
+		</id>
+		<property name="provid" type="java.lang.Integer">
+			<column name="PROVID" length="20" />
+		</property>
+		<property name="flavid" type="java.lang.Integer">
+			<column name="FLAVID" length="20" />
+		</property>
+		<property name="appid" type="java.lang.Integer">
+			<column name="APPID" length="20" />
+		</property>
+	</class>
+</hibernate-mapping>
